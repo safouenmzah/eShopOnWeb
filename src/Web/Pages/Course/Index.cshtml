@@ -1,17 +1,11 @@
 ﻿@page "{handler?}"
 @model IndexModel
 @{
-    ViewData["Title"] = "Basket";
+    ViewData["Title"] = "Course";
 }
-<section class="esh-catalog-hero">
-    @*<div class="container">
-        <img class="esh-catalog-title" src="~/images/main_banner_text.png" />
-    </div>*@
-</section>
-
 <div class="container">
-
-    @if (Model.BasketModel.Items.Any())
+<h3>The course details go here</h3>
+  @*  @if (Model.BasketModel.Items.Any())
     {
         <form method="post">
             <article class="esh-basket-titles row">
@@ -91,5 +85,5 @@
         <section class="esh-basket-item">
             <a asp-page="/Index" class="btn esh-basket-checkout text-white">[ Continue Learning ]</a>
         </section>
-    }
+    }*@
 </div>

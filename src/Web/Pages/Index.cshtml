@@ -3,17 +3,17 @@
     ViewData["Title"] = "Catalog";
     @model IndexModel
 }
-<section class="esh-catalog-hero">
+@*<section class="esh-catalog-hero">
     <div class="container">
-        <img class="esh-catalog-title" src="~/images/main_banner_text.png" />
-    </div>
-</section>
+        @*<img class="esh-catalog-title" src="~/images/main_banner_text.png" />*@
+    @*</div>
+</section>*@
 <section class="esh-catalog-filters">
     <div class="container">
         <form method="get">
-            <label class="esh-catalog-label" data-title="brand">
+           @* <label class="esh-catalog-label" data-title="brand">
                 <select asp-for="@Model.CatalogModel.BrandFilterApplied" asp-items="@Model.CatalogModel.Brands" class="esh-catalog-filter"></select>
-            </label>
+            </label>*@
             <label class="esh-catalog-label" data-title="type">
                 <select asp-for="@Model.CatalogModel.TypesFilterApplied" asp-items="@Model.CatalogModel.Types" class="esh-catalog-filter"></select>
             </label>
@@ -30,7 +30,7 @@
             @foreach (var catalogItem in Model.CatalogModel.CatalogItems)
             {
                 <div class="esh-catalog-item col-md-4">
-                    <partial name="_product" for="@catalogItem" />
+                    <partial name="_course" for="@catalogItem" />
                 </div>
             }
         </div>

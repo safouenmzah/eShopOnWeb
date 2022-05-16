@@ -10,25 +10,36 @@
                 <section class="esh-identity-drop">
                     @if (User.IsInRole("Administrators"))
                     {
-                        <a class="esh-identity-item"
-                           asp-page="/Admin/Index">
+                        <a class="esh-identity-item" asp-page="/Admin/Index">
                             <div class="esh-identity-name esh-identity-name--upper">Admin</div>
                         </a>
+                        <a class="esh-identity-item" asp-controller="Manage" asp-action="MyAccount">
+                            <div class="esh-identity-name esh-identity-name--upper">My account</div>
+                        </a>
+                        <a class="esh-identity-item" href="javascript:document.getElementById('logoutForm').submit()">
+                            <div class="esh-identity-name esh-identity-name--upper">Log Out</div>
+                            <img class="esh-identity-image" src="~/images/logout.png">
+                        </a>
                     }
-                    <a class="esh-identity-item"
-                       asp-controller="Order"
-                       asp-action="MyOrders">
-                        <div class="esh-identity-name esh-identity-name--upper">My orders</div>
-                    </a>
-                    <a class="esh-identity-item"
-                       asp-controller="Manage"
-                       asp-action="MyAccount">
-                        <div class="esh-identity-name esh-identity-name--upper">My account</div>
-                    </a>
-                    <a class="esh-identity-item" href="javascript:document.getElementById('logoutForm').submit()">
-                        <div class="esh-identity-name esh-identity-name--upper">Log Out</div>
-                        <img class="esh-identity-image" src="~/images/logout.png">
-                    </a>
+                    else
+                    {
+                        <a class="esh-identity-item" asp-page="/Admin/Index">
+                            <div class="esh-identity-name esh-identity-name--upper">Admin</div>
+                        </a>
+                        <a class="esh-identity-item" asp-controller="Order" asp-action="MyOrders">
+                            <div class="esh-identity-name esh-identity-name--upper">My courses</div>
+                        </a>
+
+                        <a class="esh-identity-item" asp-controller="Manage" asp-action="MyAccount">
+                            <div class="esh-identity-name esh-identity-name--upper">My account</div>
+                        </a>
+                        <a class="esh-identity-item" href="javascript:document.getElementById('logoutForm').submit()">
+                            <div class="esh-identity-name esh-identity-name--upper">Log Out</div>
+                            <img class="esh-identity-image" src="~/images/logout.png">
+                        </a>
+                    }
+
+
                 </section>
             </form>
         </div>

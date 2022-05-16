@@ -3,9 +3,9 @@
 @inherits BlazorAdmin.Helpers.BlazorComponent
 @namespace BlazorAdmin.Pages.CatalogItemPage
 
-<PageTitle>eShopOnWeb Admin: Manage Product Catalog</PageTitle>
+<PageTitle>eLmsOnWeb Admin: Manage Course Catalog</PageTitle>
 
-<h1>Manage Product Catalog</h1>
+<h1>Manage Course Catalog</h1>
 
 @if (catalogItems == null)
 {
@@ -24,8 +24,8 @@ else
         <thead>
             <tr>
                 <th></th>
-                <th>Item Type</th>
-                <th>Brand</th>
+                <th>Course Type</th>
+                @*<th>Brand</th>*@
                 <th>Id</th>
                 <th>Name</th>
                 <th>@nameof(CatalogItem.Description)</th>
@@ -41,7 +41,7 @@ else
                         <img class="img-thumbnail" src="@($"{item.PictureUri}")">
                     </td>
                     <td>@item.CatalogType</td>
-                    <td>@item.CatalogBrand</td>
+                    @*<td>@item.CatalogBrand</td>*@
                     <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>@item.Description</td>
