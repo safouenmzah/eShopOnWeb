@@ -14,22 +14,13 @@ namespace Microsoft.eShopWeb.Web.Pages.Course;
 
 public class IndexModel : PageModel
 {
-    private readonly IBasketService _basketService;
-    private readonly IBasketViewModelService _basketViewModelService;
-
-    //public IndexModel(IBasketService basketService,
-    //    IBasketViewModelService basketViewModelService)
-    //{
-    //    _basketService = basketService;
-    //    _basketViewModelService = basketViewModelService;
-    //}
-
-    public IndexModel()
+    private readonly IAppLogger<IndexModel> _logger;
+    public IndexModel(IAppLogger<IndexModel> logger)
     {
-
+        _logger = logger;
     }
 
-    public CourseViewModel CourseModel { get; set; } = new CourseViewModel();
+    public CourseViewModel CourseModel { get; set; } = new CourseViewModel() { Name = "new course"};
 
     //public async Task OnGet()
     //{
