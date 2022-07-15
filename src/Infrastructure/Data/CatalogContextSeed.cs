@@ -61,10 +61,10 @@ public class CatalogContextSeed
     {
         return new List<CatalogBrand>
             {
-                new("Azure"),
-                new(".NET"),
-                new("Visual Studio"),
-                new("SQL Server"),
+                new("CatalogBrand1"),
+                new("CatalogBrand2"),
+                new("CatalogBrand3"),
+                new("CatalogBrand4"),
                 new("Other")
             };
     }
@@ -73,10 +73,10 @@ public class CatalogContextSeed
     {
         return new List<CatalogType>
             {
-                new("Mug"),
-                new("T-Shirt"),
-                new("Sheet"),
-                new("USB Memory Stick")
+                new("CatalogType1"),
+                new("CatalogType2"),
+                new("CatalogType3"),
+                new("CatalogType4")
             };
     }
 
@@ -84,18 +84,18 @@ public class CatalogContextSeed
     {
         return new List<CatalogItem>
             {
-                new(2,2, ".NET Bot Black Sweatshirt", ".NET Bot Black Sweatshirt", 19.5M,  "http://catalogbaseurltobereplaced/images/products/1.png"),
-                new(1,2, ".NET Black & White Mug", ".NET Black & White Mug", 8.50M, "http://catalogbaseurltobereplaced/images/products/2.png"),
-                new(2,5, "Prism White T-Shirt", "Prism White T-Shirt", 12,  "http://catalogbaseurltobereplaced/images/products/3.png"),
-                new(2,2, ".NET Foundation Sweatshirt", ".NET Foundation Sweatshirt", 12, "http://catalogbaseurltobereplaced/images/products/4.png"),
-                new(3,5, "Roslyn Red Sheet", "Roslyn Red Sheet", 8.5M, "http://catalogbaseurltobereplaced/images/products/5.png"),
-                new(2,2, ".NET Blue Sweatshirt", ".NET Blue Sweatshirt", 12, "http://catalogbaseurltobereplaced/images/products/6.png"),
-                new(2,5, "Roslyn Red T-Shirt", "Roslyn Red T-Shirt",  12, "http://catalogbaseurltobereplaced/images/products/7.png"),
-                new(2,5, "Kudu Purple Sweatshirt", "Kudu Purple Sweatshirt", 8.5M, "http://catalogbaseurltobereplaced/images/products/8.png"),
-                new(1,5, "Cup<T> White Mug", "Cup<T> White Mug", 12, "http://catalogbaseurltobereplaced/images/products/9.png"),
-                new(3,2, ".NET Foundation Sheet", ".NET Foundation Sheet", 12, "http://catalogbaseurltobereplaced/images/products/10.png"),
-                new(3,2, "Cup<T> Sheet", "Cup<T> Sheet", 8.5M, "http://catalogbaseurltobereplaced/images/products/11.png"),
-                new(2,5, "Prism White TShirt", "Prism White TShirt", 12, "http://catalogbaseurltobereplaced/images/products/12.png")
+                new(2,2, "CatalogItem1", "CatalogItem1", 19.5M,  "http://catalogbaseurltobereplaced/images/products/1.png"),
+                new(1,2, "CatalogItem2", "CatalogItem2", 8.50M, "http://catalogbaseurltobereplaced/images/products/2.png"),
+                new(2,5, "CatalogItem3", "CatalogItem3", 12,  "http://catalogbaseurltobereplaced/images/products/3.png"),
+                new(2,2, "CatalogItem4", "CatalogItem4", 12, "http://catalogbaseurltobereplaced/images/products/4.png"),
+                new(3,5, "CatalogItem5", "CatalogItem5", 8.5M, "http://catalogbaseurltobereplaced/images/products/5.png"),
+                new(2,2, "CatalogItem6", "CatalogItem6", 12, "http://catalogbaseurltobereplaced/images/products/6.png"),
+                new(2,5, "CatalogItem7", "CatalogItem7",  12, "http://catalogbaseurltobereplaced/images/products/7.png"),
+                new(2,5, "CatalogItem8", "CatalogItem8", 8.5M, "http://catalogbaseurltobereplaced/images/products/8.png"),
+                new(1,5, "CatalogItem9", "CatalogItem9", 12, "http://catalogbaseurltobereplaced/images/produ.,4wqcts/9.png"),
+                new(3,2, "CatalogItem10", "CatalogItem10", 12, "http://catalogbaseurltobereplaced/images/products/10.png"),
+                new(3,2, "CatalogItem11", "CatalogItem11", 8.5M, "http://catalogbaseurltobereplaced/images/products/11.png"),
+                new(2,5, "CatalogItem12", "CatalogItem12", 12, "http://catalogbaseurltobereplaced/images/products/12.png")
             };
     }
 }
